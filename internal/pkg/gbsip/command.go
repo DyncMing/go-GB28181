@@ -42,7 +42,7 @@ func DeviceInfoQuery(d model.Device) {
 }
 
 func DeviceCatalogQuery(device model.Device) {
-	xml, err := parser.CreateQueryXML(parser.CatalogCmdType, "44010200491118000001")
+	xml, err := parser.CreateQueryXML(parser.CatalogCmdType, device.DeviceId)
 	if err != nil {
 		return
 	}

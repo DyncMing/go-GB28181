@@ -3,10 +3,10 @@ server:
     port: 18080
 
 mysql:
-    host: 127.0.0.1
+    host: 192.168.1.111
     port: 3306
     username: root
-    password: root
+    password: ming.niu
     database: gb
     max-idle-connections: 100
     max-open-connections: 100
@@ -14,7 +14,7 @@ mysql:
     log-level: 1
 
 redis:
-    host: 127.0.0.1
+    host: 192.168.1.111
     port: 6379
     database: 0
     username: root
@@ -38,10 +38,10 @@ redis:
 # 作为 28181 服务器的配置
 sip:
     # [必须修改] 本机的IP
-    ip: 192.168.1.223
+    ip: 192.168.1.25
 
     # [可选] 28181服务监听的端口
-    port: 5060
+    port: 7036
 
     # 根据国标6.1.2中规定，domain宜采用ID统一编码的前十位编码。国标附录D中定义前8位为中心编码（由省级、市级、区级、基层编号组成，参照GB/T 2260-2007）
     # 后两位为行业编码，定义参照附录D.3
@@ -53,7 +53,7 @@ sip:
     id: 44010200492000000001
 
     # [可选] 默认设备认证密码，后续扩展使用设备单独密码, 移除密码将不进行校验
-    password: admin123
+    password: 123456
     user-agent: gb
 
 
@@ -61,7 +61,7 @@ media:
     # [必修修改] zlm服务器的唯一id
     id: FQ3TF8yT83wh5Wvz
     # [必须修改] zlm服务器的内网IP
-    ip: 192.168.1.223
+    ip: 192.168.1.108
     # [必须修改] zlm服务器的http.port
     http-port: 8000
     # [可选] zlm服务器的hook.admin_params=secret

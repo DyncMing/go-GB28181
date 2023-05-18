@@ -19,3 +19,7 @@
 
 # Binary build folder
 release/
+/gbctl
+/gbserver
+/gbserver_
+/log/
